@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "source_url": "https://arxiv.org/abs/2310.17241v1",
+  "items": [
+    {
+      "locator": "Question 3.1, Section 3, page 7",
+      "problem_id": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "source_quote": "a positively (n + 1)-expansive map of the circle which is not positively n-expansive?",
+      "status": "Answered: no",
+      "category": "answered negatively",
+      "scope": "Every integer n >= 1; continuous selfmaps of the entire circle with a uniform finite strict all-natural-time Bowen bound.",
+      "proof": "Theorem 1 and Corollary 7"
+    },
+    {
+      "locator": "Question 3.2, Section 3, page 7",
+      "source_quote": "Which one-dimensional continua admit finitely positively expansive systems?",
+      "status": "not covered",
+      "scope": "Full classification of one-dimensional continua is not supplied. The circle case is classified in Corollary 8; the cited interval and Hawaiian-earring obstructions and bouquet examples give the neighboring cases."
+    },
+    {
+      "locator": "Remark 2.1(3)-(4) and Proposition 2.4, page 3",
+      "status": "prior proof cited",
+      "scope": "Preservation by iterates, restrictions and conjugacy; applied in Corollary 9."
+    },
+    {
+      "locator": "Proposition 3.3 through Theorem 3.8, Section 3.1, pages 7-9",
+      "status": "prior proof cited",
+      "scope": "Theorem 3.8 excludes finite positive expansivity on a nondegenerate interval. It supplies the interval dependency in Lemma 2; the source interval proof is not claimed as a new result. Remark 3.6 and Lemma 3.7 also supply the antecedent interval selection and doubling method."
+    },
+    {
+      "locator": "Lemma 3.9, Section 3.2, page 9",
+      "status": "not covered",
+      "scope": "The graph-degree inequality is not established by the circle argument."
+    },
+    {
+      "locator": "Remark 3.10, Section 3.2, page 9",
+      "status": "Reproved; prior proof Gangloff-Guillon-Oprocha, 2023",
+      "scope": "For 1 <= k <= n a bouquet of n circles supports a positively k-expansive map; for k >= 2 the displayed map is not positively (k-1)-expansive. The full construction is proved in Corollary 10."
+    },
+    {
+      "locator": "Proposition 3.11, page 9, and following comment, page 10",
+      "status": "prior proof cited",
+      "scope": "Hawaiian-earring obstruction and its stated infinite-degree-vertex extension; not reproved here."
+    },
+    {
+      "locator": "Question 4.1, Section 4, page 10",
+      "status": "not covered",
+      "scope": "Classification of two-sided shifts and substitutive/S-adic systems is separate."
+    },
+    {
+      "locator": "Opening paragraph of Section 3, page 7",
+      "status": "prior proof cited",
+      "scope": "Positive expansivity of the standard power maps of absolute degree at least two; an explicit separation constant is proved in the note."
+    },
+    {
+      "locator": "Power-map classification",
+      "status": "not posed; finite-bound extension proved",
+      "scope": "Corollary 8 proves equivalence with power-map conjugacy from the finite Bowen bound. Under ordinary positive expansivity the classification is classical; Luo-Ntalampekos, arXiv:2411.14203v1 (2024), journal Section 3.4(E2) (2026), records it and cites Coven-Reddy (1980). The latter original chapter is not used as a proof dependency."
+    },
+    {
+      "locator": "Periodic embedded circles",
+      "status": "not posed; proved",
+      "scope": "If f is finitely positively expansive on a compact metric space and f^p(C) is contained in an embedded circle C, the restriction f^p|C has the same power-map classification, Corollary 9."
+    },
+    {
+      "locator": "Das-Khan-Das, Corollary 3.16, page 9",
+      "source_url": "https://arxiv.org/abs/1806.02810v2",
+      "status": "prior proof cited",
+      "scope": "Whole-circle homeomorphism subclass already excluded by pointwise two-sided finite expansivity; no unrestricted noninvertible conclusion is inferred from that source."
+    }
+  ]
+}

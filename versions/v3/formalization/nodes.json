@@ -1,0 +1,424 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s1",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "Let $f:\\T\\to\\T$ be continuous. Suppose that there are $\\varepsilon>0$ and an integer $N\\ge1$ such that $|W_\\varepsilon(x)|\\le N$ for every $x\\in\\T$. Then there is $c>0$ such that $W_c(x)=\\{x\\}$ for every $x\\in\\T$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s10",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s10",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s10",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "For every $1\\le k\\le n$, a bouquet of $n$ circles admits a positively\n$k$-expansive map. For $k\\ge2$ this map is not positively $(k-1)$-expansive.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s2",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "Every fibre of every iterate of $f$ is finite. If $E\\subset\\T$ is infinite, then for every integer $m\\ge0$ there exist $t\\ge m$ and $x,y\\in E$ with $d(f^t(x),f^t(y))\\ge\\varepsilon$. No arc $A$ satisfies $f^p(A)\\subset A$ for an integer $p\\ge1$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s3",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "For every arc $J$ and every two distinct points $z_1,z_2\\in\\T$, some iterate crosses at least one of $z_1,z_2$ from $J$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s4",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s4",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "If $f$ is not locally injective, it has at least two distinct turns.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s5",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s5",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "Suppose $f$ is not locally injective. For every arc $A$ and every $\\eta>0$ there are disjoint arcs $P_-,P_+\\subset A$, an integer $r\\ge1$, and an arc $D$ such that\n\\[\n f^r(P_-)=f^r(P_+)=D,\\qquad\n \\diam f^s(P_-\\cup P_+)<\\eta\\quad(0\\le s\\le r).\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s6",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s6",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "The map $f$ is locally injective.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s7",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "For every integer $n\\ge1$, every continuous positively $(n+1)$-expansive circle map is positively $n$-expansive. Finite positive expansivity and positive expansivity are equivalent on the circle. Every such map is surjective and locally injective.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s8",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "For a continuous selfmap $f$ of $\\T$, the following are equivalent:\nfinite positive expansivity; positive expansivity; and topological conjugacy\nto $f_d$ for an integer $d$ with $|d|\\ge2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:3:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+      },
+      "lineage": "collected:gangloff-guillon-oprocha-circle-finite-positive-expansivity:s9",
+      "macros": {
+        "\\N": "\\mathbb N_0",
+        "\\T": "\\mathbb T",
+        "\\diam": "\\operatorname{diam}",
+        "\\intr": "\\operatorname{int}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+      "scope": "in_scope",
+      "statement": "Let $f:X\\to X$ be continuous on a compact metric space with a uniform\nfinite forward Bowen bound. If $C\\subset X$ is homeomorphic to a circle\nand $f^p(C)\\subset C$ for some $p\\ge1$, then $f^p|_C$ is conjugate to\na power map of absolute degree at least two. In particular it maps $C$\nonto $C$ and is positively expansive.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+      "toolchain": null,
+      "version": 3,
+      "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+    }
+  ]
+}

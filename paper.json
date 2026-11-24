@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 97869,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "d489af0e8fee544a300ba7b40914ba469bde7ed769dff78059c085fe37e879e3",
+      "sha256": "d489af0e8fee544a300ba7b40914ba469bde7ed769dff78059c085fe37e879e3"
+    },
+    "source": {
+      "bytes": 18389,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "0b651961cf259eee593cfbe53057b924682d29b0a6d06e9ee4cac945fea76e80",
+      "sha256": "0b651961cf259eee593cfbe53057b924682d29b0a6d06e9ee4cac945fea76e80"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending the interval obstruction of Gangloff, Guillon and Oprocha in Various questions around finitely positively expansive dynamical systems (arXiv:2310.17241v1, Theorem 3.8, 2023), we answer their Question 3.1 (Section 3, p. 7) negatively: every continuous selfmap of the circle with a uniform finite bound on its forward Bowen sets is positively expansive, because the finite bound forces local injectivity and then separation of distinct endpoints of short arcs. The proof extends their interval doubling construction using two-target accessibility and exact common-terminal images. We also deduce the classical power-map classification under the finite Bowen hypothesis, a consequence for periodic embedded circles, and the contrasting bouquet examples from the posing source.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 97869,
+      "sha256": "d489af0e8fee544a300ba7b40914ba469bde7ed769dff78059c085fe37e879e3",
+      "url": "/api/v1/collected-papers/gangloff-guillon-oprocha-circle-finite-positive-expansivity/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-24T00:35:12.783931677Z",
+    "record": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+    "repository_name": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+    "source": {
+      "bytes": 18389,
+      "sha256": "0b651961cf259eee593cfbe53057b924682d29b0a6d06e9ee4cac945fea76e80",
+      "url": "/api/v1/collected-papers/gangloff-guillon-oprocha-circle-finite-positive-expansivity/files/source?version=3"
+    },
+    "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-24T00:35:12.783931677Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+  }
+}

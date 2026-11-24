@@ -1,0 +1,356 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[margin=1in]{geometry}
+\usepackage[unicode,colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue,breaklinks=true]{hyperref}
+\hypersetup{pdftitle={Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction},pdfauthor={Haobo Ma; Wenlin Zhang},pdfsubject={Finite positive expansivity on the circle; CC BY 4.0},pdfkeywords={circle dynamics, positive expansivity, forward Bowen sets, CC BY 4.0}}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\T}{\mathbb T}
+\newcommand{\N}{\mathbb N_0}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\intr}{\operatorname{int}}
+\title{Gangloff, Guillon and Oprocha's circle expansivity question:\ extending their interval obstruction}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending the interval obstruction of Gangloff, Guillon and Oprocha in \emph{Various questions around finitely positively expansive dynamical systems} (arXiv:2310.17241v1, Theorem 3.8, 2023), we answer their Question 3.1 (Section 3, p.~7) negatively: every continuous selfmap of the circle with a uniform finite bound on its forward Bowen sets is positively expansive, because the finite bound forces local injectivity and then separation of distinct endpoints of short arcs.
+The proof extends their interval doubling construction using two-target accessibility and exact common-terminal images. We also deduce the classical power-map classification under the finite Bowen hypothesis, a consequence for periodic embedded circles, and the contrasting bouquet examples from the posing source.
+\end{abstract}
+
+\section{The question and the uniform statement}
+Let $\T=\mathbb R/\mathbb Z$, let $\pi:\mathbb R\to\T$ be the quotient map, and give $\T$ the metric
+\[
+ d(\pi(s),\pi(t))=\min_{j\in\mathbb Z}|s-t-j|.
+\]
+For a continuous map $f:\T\to\T$, write $f^0=\mathrm{id}$ and
+\[
+ W_\varepsilon(x)=\{y\in\T: d(f^t(x),f^t(y))<\varepsilon
+                    \text{ for every }t\in\N\}.
+\]
+The map is \emph{positively $n$-expansive} if some $\varepsilon>0$ satisfies $|W_\varepsilon(x)|\le n$ for every $x$. It is \emph{finitely positively expansive} if this holds for some integer $n\ge1$, and \emph{positively expansive} if it holds for $n=1$.
+These are uniform, infinite-time conditions, including time zero; positive $n$-expansivity was introduced by Morales~\cite{Morales}.
+
+Gangloff, Guillon and Oprocha~\cite[Question 3.1, Section 3, p.~7]{GGO} ask whether, for each $n\ge1$, there is ``a positively $(n+1)$-expansive map of the circle which is not positively $n$-expansive?'' The answer is no, at every finite level. Their Theorem 3.8 excludes finite positive expansivity on nondegenerate compact intervals. We use that established interval result, not a mixing assumption on the circle. The additional step is to reach a fold from every small arc, including when an iterate covers the entire circle.
+
+The interval selection and doubling method already appear in \cite[Remark 3.6 and Lemma 3.7, pp.~8--9]{GGO}; here the two-target crossing argument extends that method to unrestricted circle dynamics. The homeomorphism subclass is also excluded by Das, Khan and Das~\cite[Corollary 3.16, p.~9]{DKD}: a finite forward Bowen bound implies their two-sided pointwise finite bound, after reducing the scale. That obstruction does not address the noninvertible case.
+
+\begin{theorem}\label{thm:main}
+Let $f:\T\to\T$ be continuous. Suppose that there are $\varepsilon>0$ and an integer $N\ge1$ such that $|W_\varepsilon(x)|\le N$ for every $x\in\T$. Then there is $c>0$ such that $W_c(x)=\{x\}$ for every $x\in\T$.
+\end{theorem}
+No injectivity, surjectivity or differentiability hypothesis is imposed. In particular, the conclusion is not restricted to covering maps, and its scale $c$ need not equal $\varepsilon$.
+
+\section{Finite fibres, separation and the interval obstruction}
+Throughout the proof of the theorem fix its $\varepsilon$ and $N$. An \emph{arc} means a nondegenerate proper compact arc of the circle. It is the injective image under $\pi$ of a real compact interval of length less than one.
+
+\begin{lemma}\label{lem:basic}
+Every fibre of every iterate of $f$ is finite. If $E\subset\T$ is infinite, then for every integer $m\ge0$ there exist $t\ge m$ and $x,y\in E$ with $d(f^t(x),f^t(y))\ge\varepsilon$. No arc $A$ satisfies $f^p(A)\subset A$ for an integer $p\ge1$.
+\end{lemma}
+\begin{proof}
+Cover $\T$ by finitely many sets of diameter less than $\varepsilon$. In one such set, points of a fixed fibre have equal images and are mutually $\varepsilon$-close at time zero. If the intersection is nonempty, choose one of its points as centre; the intersection lies in its $W_\varepsilon$ set and has at most $N$ points. Thus every fibre is finite. Induction gives the same assertion for every iterate.
+
+If the separation assertion failed, then $d(f^t(x),f^t(y))<\varepsilon$ for all $x,y\in E$ and every $t\ge m$. The set $f^m(E)$ is infinite because $f^m$ has finite fibres. For any $z\in f^m(E)$, it is contained in $W_\varepsilon(z)$, a contradiction.
+
+For the last assertion, first note that $f^p$ has the same uniform cardinal bound $N$ at a possibly smaller scale. Indeed, choose $\delta>0$ such that $d(u,v)<\delta$ implies $d(f^j(u),f^j(v))<\varepsilon$ for $0\le j<p$. Closeness at every multiple of $p$ then implies closeness at every natural time, by writing $t=ap+j$. Restrict to $A$ and conjugate by a homeomorphism from $[0,1]$ onto $A$. Uniform continuity of that homeomorphism transfers the finite bound to a continuous interval selfmap, contrary to \cite[Theorem 3.8, Section 3.1, p.~9]{GGO}.
+\end{proof}
+
+\section{Reaching one of two targets}
+A lift of $f^q$ means a continuous $G:\mathbb R\to\mathbb R$ with $\pi\circ G=f^q\circ\pi$. Such a lift exists because $\mathbb R$ is simply connected. A target $z\in\T$ is \emph{crossed} from an arc $J=\pi([a,b])$ if a lift $G$ and a representative $v$ of $z$ satisfy
+\[
+ \min_{[a,b]}G<v<\max_{[a,b]}G.
+\]
+This strict condition, rather than membership in an image, handles endpoints at a circle cut.
+
+\begin{lemma}\label{lem:access}
+For every arc $J$ and every two distinct points $z_1,z_2\in\T$, some iterate crosses at least one of $z_1,z_2$ from $J$.
+\end{lemma}
+\begin{proof}
+If $f^q(J)=\T$ for some $q$, the range of any lift on the parameter interval of $J$ has length at least one. Otherwise its projection would miss a nonempty arc. The projection of the interior of a real interval of length at least one misses at most one circle point. One of the two targets therefore has a representative strictly between the lift's extrema.
+
+Suppose instead that all $A_t=f^t(J)$ are proper. By Lemma~\ref{lem:basic}, they are nondegenerate compact connected sets, hence arcs. Put $\rho=\min(\varepsilon,1/8)>0$. Infinitely many $A_t$ have length at least $\rho$: an arc of length less than $\rho$ has diameter less than $\varepsilon$, and the separation assertion of Lemma~\ref{lem:basic} applies arbitrarily late to $J$.
+
+There exist $i<j$ such that $\intr A_i$ and $\intr A_j$ overlap. To see this with a uniform scale, write any of these long arcs as $\pi([a,a+\ell])$ with $\ell\ge\rho$. Its interior contains the ball of radius $\rho/4$ about $\pi(a+\rho/2)$. Compactness gives two such centres at distance less than $\rho/4$; the second centre is in both interiors. Choose an arc $H\subset\intr A_i\cap\intr A_j$, put $p=j-i$, $g=f^p$, and $C_r=g^r(A_i)$ for $r\ge0$. Then $C_r=A_{i+rp}$ is proper, and
+\[
+ g^r(H)\subset C_r\cap C_{r+1}.
+\]
+The image $g^r(H)$ is infinite, so the interiors of these two arcs meet: their four endpoints cannot contain their entire intersection. Hence $U=\bigcup_{r\ge0}\intr C_r$ is open and connected.
+
+The closure $K=\overline{\bigcup_{r\ge0}C_r}$ is connected, contains an arc, and satisfies $g(K)\subset K$ by continuity. If it were proper, it would be an arc, contradicting Lemma~\ref{lem:basic}. Thus $K=\T$. Each arc is the closure of its interior, so $U$ is dense. A connected proper open subset of the circle is an open arc; if it is dense, its complement is a single point. Therefore $z_1$ or $z_2$ belongs to $\intr C_r$ for some $r$.
+
+For $q=i+rp$, the lift of $f^q$ on the parameter interval of $J$ has a compact interval as range. Since its projection is proper, this real interval has length less than one. The chosen target is an interior point of that projected arc, and so has a representative strictly between the two real endpoints. This is the required crossing.
+\end{proof}
+
+\section{Folds and exact common-terminal arcs}
+A \emph{turn} is a circle point having a representative that is a strict local maximum or minimum of a real lift $F$ of $f$. The lift satisfies
+\[
+ F(t+1)=F(t)+d\qquad(t\in\mathbb R)
+\]
+for a fixed integer $d$: the continuous function $F(t+1)-F(t)$ is integer-valued. Changing lifts does not change the circle points that are turns.
+
+\begin{lemma}\label{lem:turns}
+If $f$ is not locally injective, it has at least two distinct turns.
+\end{lemma}
+\begin{proof}
+Near a point of failure of local injectivity, use sufficiently small source and target charts. Two distinct points then have equal values under the real lift. On the interval between them the lift is not constant, since its level sets are finite. A maximum above the endpoint value or a minimum below it is attained in the interior. Its extremal level set is finite, so an isolated extremizer is a strict local extremum. This gives one turn $\pi(c)$.
+
+If there were no other turn, $F$ would be injective on $(c,c+1)$: equal values at two points there would give a further strict extremum by the same argument. Thus it is strictly monotone there and weakly monotone on $[c,c+1]$. If increasing, a strict maximum at $c$ contradicts $F(c+h)\ge F(c)$ for small $h>0$; a strict minimum contradicts
+\[
+ F(c-h)=F(c-h+1)-d\le F(c+1)-d=F(c).
+\]
+If decreasing, the inequalities reverse: a minimum contradicts the right-hand inequality and a maximum the left-hand one. In each case the turn at $c$ is impossible.
+\end{proof}
+
+We will use the following elementary interval selection fact. If a continuous real function on a compact interval has image containing $[u,v]$, $u<v$, some compact subinterval has image exactly $[u,v]$. Choose points at the two target levels, reverse the parameter if necessary so that a point at level $u$ precedes one at level $v$, and take the first occurrence of $v$ after the chosen occurrence of $u$, followed by the last occurrence of $u$ before it. Between those two times the values stay in $[u,v]$ by the intermediate value theorem. The same fact applies to maps between proper arcs after taking charts. Preimages selected for disjoint target arcs are disjoint.
+
+\begin{lemma}\label{lem:branch}
+Suppose $f$ is not locally injective. For every arc $A$ and every $\eta>0$ there are disjoint arcs $P_-,P_+\subset A$, an integer $r\ge1$, and an arc $D$ such that
+\[
+ f^r(P_-)=f^r(P_+)=D,\qquad
+ \diam f^s(P_-\cup P_+)<\eta\quad(0\le s\le r).
+\]
+\end{lemma}
+\begin{proof}
+Take two turns from Lemma~\ref{lem:turns}, and use Lemma~\ref{lem:access} to cross one, say $z$, from $A$ with an iterate $q$. Let $v$ be its strictly crossed lift value. The corresponding level set on the parameter interval of $A$ is finite, since fibres of $f^q$ are finite. Between points below and above $v$, the sign of $G-v$ must change at an isolated zero in the interior. Arbitrarily short intervals about that zero therefore still have $v$ strictly inside their image.
+
+Choose such a subarc $B\subset A$ so small that
+\[
+ \diam f^s(B)<\min(\eta,1/8)\quad(0\le s\le q+1).
+\]
+This is possible by continuity of the finitely many iterates. The set $f^q(B)$ is a proper arc with $z$ in its interior. A strict extremum at $z$ supplies two disjoint nondegenerate closed subarcs $L_-,L_+\subset f^q(B)$, one on each side of $z$, with the same image $D$ under $f$. Indeed, in a target chart choose a small nondegenerate interval strictly below the extremal value for a maximum (strictly above for a minimum), and use the selection fact on both sides. Make the charts small enough that $D$ is proper.
+
+Apply that selection fact to $f^q:B\to f^q(B)$ for each $L_\pm$. This gives disjoint $P_\pm\subset B$ with $f^q(P_\pm)=L_\pm$. With $r=q+1$ we have $f^r(P_\pm)=D$, and every required diameter estimate follows from $P_-\cup P_+\subset B$. In particular the last application of $f$, not just the transit to the turn, is included in the bound.
+\end{proof}
+
+\begin{lemma}\label{lem:local}
+The map $f$ is locally injective.
+\end{lemma}
+\begin{proof}
+Suppose otherwise, and fix $0<\eta<\min(\varepsilon,1/8)$. We construct, for each $k\ge0$, $2^k$ pairwise disjoint arcs $J_{k,a}$, an integer $T_k\ge0$, and an arc $D_k$ such that
+\[
+ f^{T_k}(J_{k,a})=D_k\text{ for every }a,\qquad
+ \diam\left(\bigcup_a f^s(J_{k,a})\right)<\eta\quad(0\le s\le T_k).
+\]
+For $k=0$ take a single arc of diameter less than $\eta$ and $T_0=0$. Given the family at level $k$, apply Lemma~\ref{lem:branch} to $D_k$. In each $J_{k,a}$ select exact pullbacks of $P_-$ and $P_+$ under $f^{T_k}$, using the selection fact above. The two pullbacks are disjoint; different old arcs were already disjoint. Their images at time $T_k+r$ are all $D$. Up to time $T_k$ the old estimates apply to subsets. At times $T_k+s$, $0\le s\le r$, the new estimates follow from the images of $P_-\cup P_+$. This proves the induction with $T_{k+1}=T_k+r$.
+
+Choose $k$ with $2^k>N$, choose $w\in D_k$, and select in each $J_{k,a}$ one point $x_a$ with $f^{T_k}(x_a)=w$. They are distinct. At all times through $T_k$ they are mutually within $\eta<\varepsilon$; at every later time their images are equal. Thus all $2^k$ points lie in $W_\varepsilon(x_a)$ for any chosen centre, contrary to its cardinal bound.
+\end{proof}
+
+\section{From local injectivity to positive expansivity}
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Compactness and Lemma~\ref{lem:local} give $a>0$ such that $f$ is injective on every ball $B(x,a)$. For example, take a Lebesgue number for a finite open cover of injectivity neighbourhoods. Uniform continuity gives $b>0$ such that $d(u,v)<b$ implies $d(f(u),f(v))<1/8$. Put
+\[
+ c=\min(\varepsilon,a,b,1/8)>0.
+\]
+Suppose $d(f^t(x),f^t(y))<c$ for every $t\in\N$. Write $x_t=f^t(x)$ and $y_t=f^t(y)$, and let $I_t$ be the unique shorter closed arc between them, taking $I_t=\{x_t\}$ when they coincide. Every $z\in I_t$ satisfies
+\[
+ d(z,x_t)\le d(x_t,y_t)<c.
+\]
+Hence $I_t\subset B(x_t,a)$ and $f$ is injective there. Moreover $f(I_t)\subset B(x_{t+1},1/8)$. Within this small ball its compact connected image is exactly the short arc between its endpoint images: a continuous injective interval map in a real chart is strictly monotone. Thus $f(I_t)=I_{t+1}$ for every $t$, and $f^t(I_0)=I_t$.
+
+It follows that every $z\in I_0$ belongs to $W_\varepsilon(x)$. If $x\ne y$, the arc $I_0$ is infinite, contradicting the finite bound. Therefore $x=y$, as required.
+\end{proof}
+
+\section{Consequences and source coverage}
+\begin{corollary}\label{cor:levels}
+For every integer $n\ge1$, every continuous positively $(n+1)$-expansive circle map is positively $n$-expansive. Finite positive expansivity and positive expansivity are equivalent on the circle. Every such map is surjective and locally injective.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:main} with $N=n+1$. A singleton Bowen set has cardinality at most $n$ for every $n\ge1$, and the converse equivalence uses $N=1$. Local injectivity is Lemma~\ref{lem:local}. If $f(\T)$ were proper, finite fibres would make it a nondegenerate compact connected proper set, hence an arc. Since $f(f(\T))\subset f(\T)$, this contradicts Lemma~\ref{lem:basic} with $p=1$.
+\end{proof}
+
+The statement does not exclude positively expansive circle maps. For each integer $d$ with $|d|\ge2$, the map $f_d(\pi(t))=\pi(dt)$ is positively expansive. Here is a direct proof with $c_d=1/(2(|d|+1))$. If two orbits stay within $c_d$, represent their difference at time $t$ by $u_t\in(-c_d,c_d)$. Then $u_{t+1}-du_t$ is an integer of absolute value less than $(|d|+1)c_d=1/2$, hence is zero. Boundedness of $u_t=d^t u_0$ forces $u_0=0$.
+
+\begin{corollary}[Power-map classification]\label{cor:classification}
+For a continuous selfmap $f$ of $\T$, the following are equivalent:
+finite positive expansivity; positive expansivity; and topological conjugacy
+to $f_d$ for an integer $d$ with $|d|\ge2$.
+\end{corollary}
+\begin{proof}
+Only the classification implication remains. By Corollary~\ref{cor:levels},
+$f$ is onto and locally injective. A real lift $F$ is therefore locally
+strictly monotone. Its orientation is locally constant, hence constant on
+$\mathbb R$, so $F$ is strictly monotone. Write $F(t+1)=F(t)+d$; then
+$d\ne0$. If $|d|=1$, $f$ is a homeomorphism, contrary to the theorem that
+a positively expansive injective map on a compact metric space has finite
+domain~\cite[Theorem, pp.~304--305]{CK}. Thus $|d|\ge2$.
+
+The periodic function $F(t)-dt$ is bounded in absolute value by some $M$.
+Set $H_n(t)=d^{-n}F^n(t)$. For every $t\in\mathbb R$,
+\[
+ |H_{n+1}(t)-H_n(t)|\le M|d|^{-n-1}.
+\]
+Consequently $H_n$ converges uniformly to a continuous nondecreasing
+function $H$ with $H(t+1)=H(t)+1$ and $H(F(t))=dH(t)$. Monotonicity holds
+also for negative $d$, since $F^n$ has the sign of $d^n$.
+The induced continuous onto map $h:\T\to\T$ satisfies $hf=f_dh$.
+
+Suppose that a fibre $K=h^{-1}(z)$ is nondegenerate. Such a fibre is a
+proper compact arc: a level set of $H$ is a compact real interval of length
+less than one. Write $K_j=h^{-1}(f_d^j(z))$, so $f^j(K)\subset K_j$.
+If the orbit of $z$ repeats, a nondegenerate fibre $K_j$ is mapped into
+itself by a positive iterate of $f$, contradicting Lemma~\ref{lem:basic};
+nondegeneracy follows from the finite fibres of $f^j$. If the orbit does
+not repeat, the arcs $K_j$ are pairwise disjoint, so their lengths tend to
+zero. Then $\diam f^j(K)\to0$, contradicting the arbitrarily late
+separation in Lemma~\ref{lem:basic}. Hence every fibre of $h$ is a singleton.
+The map $h$ is a homeomorphism and the desired conjugacy follows.
+Conversely, conjugacy preserves positive expansivity by uniform continuity
+of the conjugating homeomorphism and its inverse on compact spaces
+\cite[Proposition 2.4]{GGO}.
+\end{proof}
+
+For already positively expansive circle maps, the power-map classification is classical; see Luo and Ntalampekos~\cite[Section 3.4, property (E2), p.~3092]{LN}, who refer to Coven and Reddy's earlier manifold result. Corollary~\ref{cor:classification} gives this conclusion from the weaker finite Bowen hypothesis, with the conjugacy constructed above.
+
+\begin{corollary}[Periodic embedded circles]\label{cor:embedded}
+Let $f:X\to X$ be continuous on a compact metric space with a uniform
+finite forward Bowen bound. If $C\subset X$ is homeomorphic to a circle
+and $f^p(C)\subset C$ for some $p\ge1$, then $f^p|_C$ is conjugate to
+a power map of absolute degree at least two. In particular it maps $C$
+onto $C$ and is positively expansive.
+\end{corollary}
+\begin{proof}
+Uniform continuity of $f^j$, $0\le j<p$, supplies a scale $\delta$ for
+which a $\delta$-Bowen set of $f^p$ is contained in an
+$\varepsilon$-Bowen set of $f$, exactly as in Lemma~\ref{lem:basic}.
+Restriction to $C$ preserves this bound. Transfer it through a
+homeomorphism $\T\to C$ and apply Corollary~\ref{cor:classification}.
+\end{proof}
+Neither of these two corollaries is posed as a separate assertion in the
+source; they are consequences of the circle theorem.
+
+\begin{corollary}[The bouquet contrast of Gangloff, Guillon and Oprocha]
+\label{cor:bouquet}
+For every $1\le k\le n$, a bouquet of $n$ circles admits a positively
+$k$-expansive map. For $k\ge2$ this map is not positively $(k-1)$-expansive.
+\end{corollary}
+\begin{proof}
+This is the construction in \cite[Remark 3.10, Section 3.2, p.~9]{GGO}.
+Give every circle circumference one and use the shortest-path metric on
+the bouquet, whose common point is $0$. Map each of $C_1,\ldots,C_{k-1}$
+homeomorphically onto $C_k$, preserving its parameter, and double the
+parameter on each of $C_k,\ldots,C_n$.
+The invariant bouquet $Y=C_k\cup\cdots\cup C_n$ is positively expansive:
+on one circle use the power-map estimate above; on different circles,
+orbit distance is the sum of distances to $0$, so orbits that remain
+sufficiently close must each equal the orbit of $0$.
+
+Choose $c$ smaller than both an expansivity scale for $f|_Y$ and $1/4$.
+If $y\in W_c(x)$, the future in $Y$ gives $f(y)=f(x)$.
+A fibre has at most one point in each of the $k-1$ transient circles
+apart from $0$. Distinct points of a fibre in $Y$ have distance at least
+$1/2$: in a single circle they are antipodal, and in different circles
+only preimages of $0$ are possible. Thus a set of diameter less than
+$2c$ contains at most one of them. This gives $|W_c(x)|\le k$.
+For $k\ge2$ and arbitrarily small $u>0$, take the point with parameter
+$u$ in every transient circle and the point with parameter $u/2$ in $C_k$.
+These $k$ distinct points are arbitrarily close to $0$ and have the same
+image. They lie in one Bowen set at any prescribed positive scale if $u$
+is small enough, proving failure of positive $(k-1)$-expansivity.
+\end{proof}
+Thus the whole-circle hypothesis cannot be replaced by an arbitrary
+finite connected graph. The bouquet examples are prior results, not
+counterexamples to the circle theorem.
+
+\begin{center}\small
+\begin{tabular}{@{}p{.31\textwidth}p{.63\textwidth}@{}}
+\toprule
+Source item in \cite{GGO}, v1 & Mathematical coverage\\
+\midrule
+Question 3.1, Section 3, p.~7 & \textbf{Answered: no}, for every $n\ge1$; Theorem~\ref{thm:main} and Corollary~\ref{cor:levels}.\\
+Question 3.2, Section 3, p.~7 & \textbf{Not covered} in full. The circle case admits precisely the power-map conjugacy classes in Corollary~\ref{cor:classification}; other continua are not classified.\\
+Remark 2.1(3)--(4), p.~3; Proposition 2.4, p.~3 & \textbf{Prior proof cited}: iterates, restrictions and conjugacy; used for periodic embedded circles.\\
+Proposition 3.3--Theorem 3.8, pp.~7--9 & \textbf{Prior proof cited}: the interval obstruction; Theorem 3.8 is used in Lemma~\ref{lem:basic}.\\
+Lemma 3.9, Section 3.2, p.~9 & \textbf{Not covered}: the general graph-degree inequality is independent of the circle argument.\\
+Remark 3.10, Section 3.2, p.~9 & \textbf{Reproved; prior proof GGO, 2023}: all $1\le k\le n$ bouquet examples, Corollary~\ref{cor:bouquet}.\\
+Proposition 3.11, p.~9; following comment, p.~10 & \textbf{Prior proof cited}: the Hawaiian-earring obstruction and its infinite-degree-vertex extension; not reproved here.\\
+Question 4.1, Section 4, p.~10 & \textbf{Not covered}: two-sided symbolic and $S$-adic classifications.\\
+Circle-homeomorphism subclass & \textbf{Prior proof cited}: Das--Khan--Das, 2018, Corollary 3.16; contained in the negative answer.\\
+Power-map classification & \textbf{Not posed; finite-bound extension proved}: Corollary~\ref{cor:classification}; the ordinary positive case is classical, as recorded in \cite{LN}.\\
+Periodic embedded circles & \textbf{Not posed; proved}: Corollary~\ref{cor:embedded}; no separate source problem is asserted.\\
+\bottomrule
+\end{tabular}
+\end{center}
+The source's Question 3.2 asks: ``Which one-dimensional continua admit
+finitely positively expansive systems?'' The table distinguishes the
+complete circle answer from that broader question. Positive power-map
+examples are already noted before Question 3.1; the calculation above is
+their proof in the present metric.
+
+\section{Formal statement and proof coverage}
+\begingroup\small\raggedright
+The written argument above proves the theorem and its stated consequences. The corresponding Lean declarations are at the fixed source revision
+\texttt{71b4d849a96f7050cd0e6270e1551e061c680e33}. The metric circle is exactly \texttt{AddCircle (1 : $\mathbb R$)}. The declaration
+\texttt{positivelyExpansive\_\allowbreak of\_\allowbreak finitelyPositiveExpansive}
+in \href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean}{\texttt{CircleFinitePositiveExpansiveness.lean}}
+proves precisely Theorem~\ref{thm:main}; the same file's
+\texttt{isLocallyInjective\_\allowbreak of\_\allowbreak finitelyPositiveExpansive}
+proves Lemma~\ref{lem:local}.
+Its declaration \texttt{surjective} proves the surjectivity assertion of
+Corollary~\ref{cor:levels}.
+
+The \href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness/CircleOrder.lean}{\texttt{CircleOrder.lean}} declaration \texttt{two\_target\_crossing}
+proves Lemma~\ref{lem:access}, including proper and whole-circle images.
+The definitions \texttt{ForwardBowen}, \texttt{ForwardBowenBound} and \texttt{FinitelyPositive\allowbreak Expansive} in
+\href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/IntervalObstruction/Basic.lean}{\texttt{IntervalObstruction/Basic.lean}}
+use strict distance inequalities at every natural-number time and one bound uniform in the centre.
+The conclusion \texttt{PositivelyExpansive} is defined in
+\href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/UniformTracing.lean}{\texttt{UniformTracing.lean}}
+as one positive scale at which forward closeness implies equality.
+Under failure of local injectivity, the circle file's
+\texttt{arbitrarily\_\allowbreak many\_\allowbreak circle\_\allowbreak histories}
+gives the $2^k$ common-terminal arc families used above.
+In the \href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness/Basic.lean}{circle basic file},
+\texttt{no\_periodic\_trapping\_arc} excludes $f^p(A)\subset A$ for proper
+arcs and $p\ge1$, and \texttt{image\_shortArc} gives the short-arc image
+identity under injectivity and small-image hypotheses, as used in the
+final proof.
+In \href{https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/IntervalObstruction.lean}{\texttt{IntervalObstruction.lean}},
+\texttt{interval\_not\_finitelyPositiveExpansive} proves the cited
+obstruction for continuous selfmaps of a nondegenerate compact real interval.
+The power-map classification, periodic embedded-circle result, bouquet
+calculation and source-coverage table have written proofs and deductions;
+they are not assertions of these Lean declarations. The accompanying
+exact-arithmetic checks concern power-map separation constants, finite
+cardinal inequalities, quotient-distance identities and geometric-series
+bounds in the classification argument, not the universal topological theorem.
+\endgroup
+
+\begin{thebibliography}{9}
+\bibitem{GGO} S.~Gangloff, P.~Guillon and P.~Oprocha,
+\emph{Various questions around finitely positively expansive dynamical systems},
+\href{https://arxiv.org/abs/2310.17241v1}{arXiv:2310.17241v1} (2023), Questions 3.1--3.2 and Theorem 3.8.
+Journal version: \emph{Topology and its Applications} \textbf{377} (2026), 109597,
+\href{https://doi.org/10.1016/j.topol.2025.109597}{doi:10.1016/j.topol.2025.109597}.
+The numbered locators used here refer to arXiv v1.
+\bibitem{Morales} C.~A.~Morales, \emph{A generalization of expansivity},
+\emph{Discrete and Continuous Dynamical Systems} \textbf{32} (2012), 293--301,
+\href{https://doi.org/10.3934/dcds.2012.32.293}{doi:10.3934/dcds.2012.32.293}.
+\bibitem{DKD} P.~Das, A.~G.~Khan and T.~Das,
+\emph{Measure expansivity and specification for pointwise dynamics},
+\href{https://arxiv.org/abs/1806.02810v2}{arXiv:1806.02810v2} (2018), Corollary 3.16, p.~9.
+Journal version: \href{https://doi.org/10.1007/s00574-019-00134-3}{doi:10.1007/s00574-019-00134-3}.
+\bibitem{LN} Y.~Luo and D.~Ntalampekos,
+\emph{Piecewise quasiconformal dynamical systems of the unit circle},
+\emph{Ergodic Theory and Dynamical Systems} \textbf{46} (2026), 3082--3122,
+\href{https://doi.org/10.1017/etds.2026.10328}{doi:10.1017/etds.2026.10328},
+Section 3.4, property (E2), p.~3092; preprint
+\href{https://arxiv.org/abs/2411.14203v1}{arXiv:2411.14203v1} (2024).
+\bibitem{CK} E.~M.~Coven and M.~Keane,
+\emph{Every compact metric space that supports a positively expansive
+homeomorphism is finite}, \emph{Dynamics \& Stochastics},
+IMS Lecture Notes--Monograph Series \textbf{48} (2006), 304--305,
+\href{https://doi.org/10.1214/074921706000000310}{doi:10.1214/074921706000000310};
+\href{https://arxiv.org/abs/math/0608257v1}{arXiv:math/0608257v1}.
+This is a short proof of the classical injective-map obstruction, credited
+there to Schwartzman's 1952 dissertation.
+\end{thebibliography}
+\smallskip
+\noindent\small\copyright\ Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

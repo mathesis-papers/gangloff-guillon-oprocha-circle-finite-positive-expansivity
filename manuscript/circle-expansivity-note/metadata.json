@@ -1,0 +1,80 @@
+{
+  "id": "gangloff-guillon-oprocha-circle-finite-positive-expansivity",
+  "revision": 3,
+  "problem_ids": [
+    "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
+  ],
+  "topic": "The strict finite positive-expansivity hierarchy for continuous maps of the entire circle",
+  "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
+  "creators": [
+    {
+      "name": "Ma, Haobo",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Zhang, Wenlin",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "Extending the interval obstruction of Gangloff, Guillon and Oprocha in Various questions around finitely positively expansive dynamical systems (arXiv:2310.17241v1, Theorem 3.8, 2023), we answer their Question 3.1 (Section 3, p. 7) negatively: every continuous selfmap of the circle with a uniform finite bound on its forward Bowen sets is positively expansive, because the finite bound forces local injectivity and then separation of distinct endpoints of short arcs. The proof extends their interval doubling construction using two-target accessibility and exact common-terminal images. We also deduce the classical power-map classification under the finite Bowen hypothesis, a consequence for periodic embedded circles, and the contrasting bouquet examples from the posing source.",
+  "summary": "Continuous finitely positively expansive circle maps are precisely those topologically conjugate to integer power maps of absolute degree at least two. The finite bound is uniform in the centre and uses strict inequalities at every natural time including zero. The written classification and periodic embedded-circle consequence accompany the circle theorem and the cited bouquet constructions; arbitrary one-dimensional continua remain outside this classification.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean",
+  "posing_source": {
+    "url": "https://arxiv.org/abs/2310.17241v1",
+    "locator": "Question 3.1, Section 3, page 7",
+    "authors": [
+      "Silvère Gangloff",
+      "Pierre Guillon",
+      "Piotr Oprocha"
+    ],
+    "resolution": "answered negatively for every integer n >= 1"
+  },
+  "formal_coverage": [
+    {
+      "declaration": "D5.S1.Dynamics.Shadowing.CircleFinitePositiveExpansiveness.positivelyExpansive_of_finitelyPositiveExpansive",
+      "statement": "Every continuous selfmap of AddCircle (1 : real) with a uniform finite strict all-natural-time forward Bowen bound is positively expansive."
+    },
+    {
+      "declaration": "D5.S1.Dynamics.Shadowing.CircleFinitePositiveExpansiveness.isLocallyInjective_of_finitelyPositiveExpansive",
+      "statement": "Local injectivity follows from continuity and that same finite positive expansivity hypothesis."
+    },
+    {
+      "declaration": "D5.S1.Dynamics.Shadowing.CircleFinitePositiveExpansiveness.surjective",
+      "statement": "A continuous finitely positively expansive selfmap of the metric circle is onto."
+    }
+  ],
+  "written_coverage": [
+    "The circle theorem and the all-n negative answer to Question 3.1",
+    "The classical power-map classification deduced from the finite Bowen hypothesis, with an explicit conjugacy proof",
+    "The corresponding classification for periodic embedded circles",
+    "A proof of the bouquet examples already stated in Remark 3.10",
+    "Power-map separation constants and the source-coverage table"
+  ],
+  "finite_checks": "Exact rational power-map constants for 2 <= absolute degree <= 32; 513 integer cardinal checks; 965 quotient-metric translation identities; 2015 exact geometric-series identities for absolute degrees 2 through 32 and tail starts 0 through 64.",
+  "related_literature": [
+    {
+      "authors": [
+        "Pramod Das",
+        "Abdul Gaffar Khan",
+        "Tarun Das"
+      ],
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1806.02810v2",
+      "locator": "Corollary 3.16, page 9",
+      "scope": "Earlier obstruction for the whole-circle homeomorphism subclass; two-sided pointwise finite expansivity."
+    },
+    {
+      "authors": [
+        "Yusheng Luo",
+        "Dimitrios Ntalampekos"
+      ],
+      "year": 2024,
+      "journal_year": 2026,
+      "url": "https://arxiv.org/abs/2411.14203v1",
+      "doi": "10.1017/etds.2026.10328",
+      "locator": "Journal Section 3.4, property (E2), page 3092",
+      "scope": "Classical power-map classification starting with ordinary positive expansivity; records the earlier Coven-Reddy manifold result."
+    }
+  ]
+}

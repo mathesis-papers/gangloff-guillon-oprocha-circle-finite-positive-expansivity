@@ -1,9 +1,33 @@
-# Mathesis paper template
+# Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+Extending the interval obstruction of Gangloff, Guillon and Oprocha in Various questions around finitely positively expansive dynamical systems (arXiv:2310.17241v1, Theorem 3.8, 2023), we answer their Question 3.1 (Section 3, p. 7) negatively: every continuous selfmap of the circle with a uniform finite bound on its forward Bowen sets is positively expansive, because the finite bound forces local injectivity and then separation of distinct endpoints of short arcs. The proof extends their interval doubling construction using two-target accessibility and exact common-terminal images. We also deduce the classical power-map classification under the finite Bowen hypothesis, a consequence for periodic embedded circles, and the contrasting bouquet examples from the posing source.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 3
+- Mathesis record: [gangloff-guillon-oprocha-circle-finite-positive-expansivity](https://mathesis-omega-research.apps.chrono-ai.fun/papers/gangloff-guillon-oprocha-circle-finite-positive-expansivity?version=3)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/gangloff-guillon-oprocha-circle-finite-positive-expansivity?version=3
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Theorem (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Corollary (s10) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Lemma (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Lemma (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Lemma (s4) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Lemma (s5) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Lemma (s6) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Corollary (s7) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Corollary (s8) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+| Corollary (s9) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).
