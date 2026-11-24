@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24485945",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24485946",
     "lean_source": {
       "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
       "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
