@@ -24,7 +24,7 @@
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
     "README.md": "1efaefc4c81c526dd4f7a9203d7035c44525f60524d3b6fb4b73ba8c3693bcca",
-    "formalization/nodes.json": "4e81ed549b29e0ec12edd28d7e5439be32daee293ef09b8fb2cc2a5cefd57bf6",
+    "formalization/nodes.json": "ae6e3dcf7f964f64d21e70d00729becaa4f401b9e0cc8f7b27af03d9a2fafbf0",
     "manuscript/circle-expansivity-note/MANIFEST.sha256": "9a87a0ca95f83649204d18f700533df0d792d02e572adbbdbd920ce80a1288cc",
     "manuscript/circle-expansivity-note/README.md": "a7ecfda1ff8c4c603264b24c8e7c9482a425cc0ae7c0c1af415b35b30d0f74be",
     "manuscript/circle-expansivity-note/coverage.json": "8e453b916aaeaa3c2a3bb6f546aabb9f21836a76cfae1b6d6c6ee7aa18b7908c",
@@ -36,5 +36,5 @@
     "paper.pdf": "d489af0e8fee544a300ba7b40914ba469bde7ed769dff78059c085fe37e879e3",
     "source.archive": "0b651961cf259eee593cfbe53057b924682d29b0a6d06e9ee4cac945fea76e80"
   },
-  "snapshot_identity": "eb076989bb282b986e7fd89a41ee55d523f0dedf32b3638579edceed3ffafb21"
+  "snapshot_identity": "dfc5ecc988c09066d3af67403ea587938019f6c35182042c2f0654fac707c02d"
 }
