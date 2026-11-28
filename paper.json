@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24485945",
     "current_version": 3,
     "doi": "10.5281/zenodo.24485946",
+    "kind": "note",
     "lean_source": {
       "revision": "71b4d849a96f7050cd0e6270e1551e061c680e33",
       "url": "https://github.com/the-omega-institute/trureturing/blob/71b4d849a96f7050cd0e6270e1551e061c680e33/D5/S1/Dynamics/Shadowing/CircleFinitePositiveExpansiveness.lean"
@@ -55,10 +56,12 @@
     "title": "Gangloff, Guillon and Oprocha's circle expansivity question: extending their interval obstruction",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-24T00:35:12.783931677Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "gangloff-guillon-oprocha-circle-finite-positive-expansivity"
